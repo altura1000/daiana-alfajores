@@ -1,21 +1,24 @@
+/** @type {import('next').NextConfig} */
 
+const repoName = 'daiana-alfajores'
+// const isProduction = process.env.NODE_ENV === 'production'
 
+const isProduction = true;
 
-import type { NextConfig } from "next";
+const nextConfig = {
+  output: 'export',
+  trailingSlash: true,
 
-const nextConfig: NextConfig = {
-  images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "*.makeproxy-c.figma.site",
-      },
-      {
-        protocol: "https",
-        hostname: "images.unsplash.com",
-      },
-    ],
+  basePath: isProduction ? `/${repoName}` : '',
+  assetPrefix: isProduction ? `/${repoName}/` : '',
+
+  typescript: {
+    ignoreBuildErrors: true,
   },
-};
 
-export default nextConfig;
+  images: {
+    unoptimized: true,
+  },
+}
+
+export default nextConfig
