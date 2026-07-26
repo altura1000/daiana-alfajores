@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import heroImage from "../../public/hero.png";
+
 export default function Hero() {
   return (
     <section
@@ -15,7 +17,7 @@ export default function Hero() {
     >
       {/* Background Image */}
       <Image
-        src="/hero.png"
+        src={heroImage}
         alt="אלפחורס ארגנטינאי פרימיום"
         fill
         priority
