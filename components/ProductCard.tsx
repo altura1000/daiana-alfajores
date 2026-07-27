@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import foo from '@/public/whyUs.png'
+
 interface ProductCardProps {
   title: string;
   description: string;
@@ -46,7 +48,7 @@ export default function ProductCard({
       {/* Image */}
       <div className="relative aspect-[4/3] overflow-hidden bg-[#eadcc9]">
         <Image
-          src={imgSrc}
+          src={foo}
           alt={imgAlt}
           fill
           sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"

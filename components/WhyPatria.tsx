@@ -1,5 +1,8 @@
 import Image from "next/image";
 
+import whyUs from '@/public/whyUs.png'
+
+
 const details = [
   {
     number: "01",
@@ -104,7 +107,7 @@ export default function WhyPatria() {
         {/* Image — left side */}
         <div className="relative min-h-[480px] overflow-hidden sm:min-h-[600px] lg:min-h-[780px]">
           <Image
-            src="/whyUs.png"
+            src={whyUs}
             alt="אלפחור פתוח עם שכבת דולסה דה לצ'ה"
             fill
             priority

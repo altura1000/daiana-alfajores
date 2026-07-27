@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import daiana from '@/public/daiana.jpeg'
+
 export default function DianaStory() {
   return (
  <section className="py-24">
@@ -8,7 +10,7 @@ export default function DianaStory() {
     <div className="flex-1">
       <div className="relative mx-auto aspect-[4/5] max-w-md overflow-hidden rounded-[32px] shadow-2xl">
         <Image
-          src="/daiana.jpeg"
+          src={daiana}
           alt="דיאנה"
           fill
           className="object-cover"
