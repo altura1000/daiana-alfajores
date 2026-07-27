@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import heroImage from "../../public/hero.png";
+
+import heroImage from '@/public/hero.png'
 
 export default function Hero() {
   return (
@@ -57,7 +58,6 @@ export default function Hero() {
 
           <h1
             className="
-              text-[#f8f4ee]
               mt-6
               text-4xl
               font-bold
