@@ -2,6 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 
+import "../style/hero.css";
+
+
 import heroImage from '@/public/hero.png'
 
 export default function Hero() {
@@ -17,14 +20,16 @@ export default function Hero() {
       "
     >
       {/* Background Image */}
-      <Image
-        src={heroImage}
-        alt="אלפחורס ארגנטינאי פרימיום"
-        fill
-        priority
-        sizes="100vw"
-        className="object-cover object-center"
-      />
+      <div className="cinematic-pan absolute inset-0">
+        <Image
+          src={heroImage}
+          alt="אלפחורס ארגנטינאי פרימיום"
+          fill
+          priority
+          sizes="100vw"
+          className="pointer-events-none select-none object-cover object-center"
+        />
+      </div>
 
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-gradient-to-l from-black/60 via-black/35 to-black/15" />
