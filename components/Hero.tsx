@@ -96,7 +96,7 @@ export default function Hero() {
             מושלם למתנה, לאירוח או פשוט לפנק את עצמכם.
           </p>
 
-          <div className="mt-10 flex flex-col gap-4 sm:flex-row-reverse">
+          <div className="mt-10 flex flex-col items-start gap-4 sm:flex-row">
             <Link
               href="#packs"
               className="
@@ -117,16 +117,16 @@ export default function Hero() {
               href="#alfajores"
               className="
                 rounded-full
-                border border-white
-                bg-white/10
+                border border-white/80
                 px-8 py-4
                 text-center
                 text-lg font-semibold
                 text-white
-                backdrop-blur-md
-                transition
+                transition-all duration-300
+                hover:border-white
                 hover:bg-white
                 hover:text-[#3d1f08]
+                hover:shadow-lg
               "
             >
               צפה במוצרים

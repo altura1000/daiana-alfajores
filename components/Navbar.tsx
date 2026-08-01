@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import FlagLine from "./FlagLine";
 
+import logo from '@/public/logo.png';
+
 const navItems = [
   { href: "#alfajores", label: "אלפג'ורס" },
   { href: "#packs", label: "חבילות" },
@@ -23,7 +25,7 @@ export default function Navbar() {
           className="flex items-center gap-3"
         >
           <Image
-            src="https://app-7zwxtphgorlbz7ynbf33ipanf2suauxmc4djb4w5lw2lxh7wamgi.makeproxy-c.figma.site/src/imports/artisanal_alfajor-2.png"
+            src={logo}
             alt="Patria Alfajores"
             width={44}
             height={44}
